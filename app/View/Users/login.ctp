@@ -163,7 +163,7 @@ input#txt_Password{font-family: Arial}
                                             ?>
                                             
                                             <label class="lbl_ie">Email ID</label>
-                                            <?php echo $this->Form->text('email', array('size' => '30', 'class' => 'textbox', 'placeholder' => 'Email ID', 'title' => 'Email ID', 'id' => 'email', 'style' => 'background:#fff')); ?>
+                                            <?php echo $this->Form->text('email', array('size' => '30', 'class' => 'textbox', 'placeholder' => 'Email ID', 'title' => 'Email ID', 'id' => 'email', 'autofocus' => '', 'style' => 'background:#fff')); ?>
 
                                             <label class="lbl_ie">Password</label>
                                             <?php echo $this->Form->password('password', array('size' => '30', 'class' => 'textbox', 'placeholder' => 'Password', 'title' => 'Password', 'id' => 'password')); ?>
