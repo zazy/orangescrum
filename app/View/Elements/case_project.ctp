@@ -103,7 +103,7 @@
 			if(groupby=='status' && (headerlegend != prvGrpvalue)){%>
     <tr><td colspan="5" align="left" class="curr_day"><%= easycase.getColorStatus(getdata.Easycase.type_id, headerlegend) %></td></tr>
     <% prvGrpvalue= headerlegend;
-			}else if(groupby=='priority' && (((getdata.Easycase.priority).trim()) != prvGrpvalue)){%>
+			}else if(groupby=='priority' && getdata.Easycase.priority && (((getdata.Easycase.priority).trim()) != prvGrpvalue)){%>
     <tr><td colspan="5" align="left" class="curr_day"><%= easycase.getColorPriority(getdata.Easycase.priority) %></td></tr>
     <%	prvGrpvalue = (getdata.Easycase.priority).trim();
 			}else if(groupby=='due_date' && (getdata.Easycase.csDueDate !=prvGrpvalue)){%>
